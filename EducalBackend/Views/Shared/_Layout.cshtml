@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educal</title>
+    <link rel="stylesheet" href="~/assets/css/bootstrapt.css">
+    <link rel="stylesheet" href="~/assets/css/home.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="header d-flex justify-content-between align-items-center">
+            <img src="assets/images/logo.png" alt="">
+            <label for="check">
+                <button>
+                    <i class="fa-solid fa-xmark"></i>
+                    <p>CLOSE</p>
+                </button>
+            </label>
+        </div>
+        <div class="main">
+            <div>
+                <ul class="drop">
+                    <li>
+                        <a href="home.html">HOME</a>
+                        <ul>
+                            <li><a href="#">Home style 1</a></li>
+                            <li><a href="#">Home style 2</a></li>
+                            <li><a href="#">Home style 3</a></li>
+
+                        </ul>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li>
+                        <a href="#">PAGES</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search d-flex align-items-center ">
+                <i class="fa-solid fa-magnifying-glass mx-3"></i>
+                <input type="text" placeholder="Search..">
+            </div>
+            <button class="bucket mx-3"></button>
+        </div>
+    </div>
+
+
+    @await Component.InvokeAsync("Header");
+
+
+        @RenderBody()
+
+    @await Component.InvokeAsync("Footer");
+
+<script src="https://kit.fontawesome.com/9cd2072b0c.js" crossorigin="anonymous"></script>
+<script src="~/assets/js/home.js"></script>
+</body>
+
+</html>
+
